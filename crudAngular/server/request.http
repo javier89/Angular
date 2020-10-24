@@ -1,0 +1,32 @@
+### Insertar Empleado
+POST http://localhost:3000/api/empleados HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Pedro Param",
+    "puesto": "Developer Jr",
+    "departamento": "Computer Sciences",
+    "salario": 45000
+}
+
+###Consultar los empleados
+GET http://localhost:3000/api/empleados HTTP/1.1
+Content-Type: application/json
+
+###Consultar un empleado por ID
+GET http://localhost:3000/api/empleados/5f90c28b5e57e234af54264e HTTP/1.1
+
+###Actualizar un empleado
+PUT http://localhost:3000/api/empleados/5f90c828098e463ab4f0d235 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Pedro Paramo Jr",
+    "puesto": "Developer Sr",
+    "departamento": "Computer Sciences Applied",
+    "salario": 54000
+}
+
+###Eliminar un empleado
+DELETE http://localhost:3000/api/empleados/5f90c828098e463ab4f0d235 HTTP/1.1
+Content-Type: application/json
